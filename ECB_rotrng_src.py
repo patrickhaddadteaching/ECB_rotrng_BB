@@ -40,7 +40,7 @@ for i in range(v_jitter.shape[0]):
     
     
 std_dev_value_widgets=widgets.SelectionSlider(options=v_std_dev_value_widgets_option,layout=widgets.Layout(height='%dpx'%(2*param_height),width='%dpx'%(2*image_width)))
-std_dev_value_widgets_png_desc=widgets.Image(value=image_value_relativ_sigma,format='png',layout=widgets.Layout(height='%dpx'%(2*param_height)))    
+std_dev_value_widgets_png_desc=widgets.Image(value=image_value_relativ_sigma,format='png',layout=widgets.Layout(height='%dpx'%(param_height)))    
 
 sample_period_value_widgets=widgets.SelectionSlider(options=list(v_ratio_period_sample),layout=widgets.Layout(height='%dpx'%(2*param_height),width='%dpx'%(2*image_width)))
 sample_period_value_widgets_png_desc=widgets.Image(value=image_value_D,format='png',layout=widgets.Layout(height='%dpx'%(param_height)))    
